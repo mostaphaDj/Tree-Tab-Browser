@@ -1,0 +1,40 @@
+package PackageTreeBrowser;
+
+{$R *.res}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO OFF}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$IMPLICITBUILD ON}
+
+requires
+  rtl,
+  vcl,
+  vclie;
+
+contains
+  TreeComboBox in 'Explorer Treeview\TreeComboBox.pas',
+  ExplorerTreeview in 'Explorer Treeview\ExplorerTreeview.pas',
+  TreeTab in 'Tree tab\TreeTab.pas',
+  GDIP in 'Tree tab\GDIP.pas',
+  SidePanel in 'Side panel\SidePanel.pas',
+  TreeViewNew in 'Tree View\TreeViewNew.pas';
+
+end.
